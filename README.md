@@ -1,7 +1,9 @@
-# E-commerce 
+# 🌷 Desenvolvimento de E-commerce 
 
 ## 📋 Sobre o projeto 
 Projeto integrador desenvolvido no curso de Full Stack da Digital House.
+>
+Tema: Floricultura
 
 ---
 

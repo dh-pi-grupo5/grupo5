@@ -3,7 +3,7 @@
 ## 📋 Sobre o projeto 
 Projeto integrador desenvolvido no curso de Full Stack da Digital House.
 >
-Tema: Floricultura
+Tema: Plantas, flores e decoração.
 
 ---
 

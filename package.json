@@ -1,0 +1,28 @@
+{
+  "name": "grupo5",
+  "version": "1.0.0",
+  "description": "Projeto integrador desenvolvido no curso de Full Stack da Digital House.\r >\r Tema: Plantas, flores e decoração.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dh-pi-grupo5/grupo5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dh-pi-grupo5/grupo5/issues"
+  },
+  "homepage": "https://github.com/dh-pi-grupo5/grupo5#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

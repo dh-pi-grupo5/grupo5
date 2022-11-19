@@ -12,4 +12,9 @@ app.get('/home', (req,res)=>{
     return res.sendFile(__dirname + '/views/index.html');
 });
 
+//Criando a rota para login 
+app.get('/login', (req,res)=>{
+    return res.sendFile(__dirname + '/views/login.html');
+});
+
 app.listen(3000);

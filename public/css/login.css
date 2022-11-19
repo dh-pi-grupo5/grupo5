@@ -1,4 +1,3 @@
-
 body {
   background-color: rgb(122, 24, 73);
   background-position-x: center;
@@ -22,7 +21,7 @@ body {
   align-items: center;
 }
 
-footer{
+footer {
   margin-top: 20%;
   margin-left: 42%;
 }

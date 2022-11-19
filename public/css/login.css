@@ -8,12 +8,21 @@ body {
 #login {
   padding: 32px 23px;
   text-align: center;
+  height: 50%;
   background-color: aliceblue;
   border-radius: 6px black;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 .img_logo_header {
   width: 10%;
   height: 10%;
   margin-left: 45%;
   align-items: center;
+}
+
+footer{
+  margin-top: 20%;
+  margin-left: 42%;
 }

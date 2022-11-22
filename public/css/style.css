@@ -2,7 +2,7 @@
   --color-white: #fff;
   --color-dark1: #272727;
   --color-dark2: #2d2d2d;
-  --color-dark3: #414141;
+  --color-green3: #597e64;
   --color-dark4: #1c1c1c;
   --color-dark5: #343434;
   --color-purple: #b040ff;
@@ -49,8 +49,8 @@
 }
 
 ::placeholder {
-  color: rgb(232, 224, 235);
-  background-color: var(--color-dark3);
+  color: rgb(211, 235, 231);
+  background-color: var(--color-green3);
 }
 
 .force-opaque::placeholder {
@@ -59,20 +59,43 @@
 
 .img_carrinho_header {
   width: 70px;
-  margin-left: 10em;
+  margin-left: 5em;
 }
 
 footer {
   width: 100%;
-  height: 100px;
-  margin: auto;
-  bottom: 0;
-  position: fixed;
-}
+  bottom: 0px;
+  position: absolute;
+  }
 
-P {
-  text-align: center;
-}
+  .logotipo{
+    width: 100%;
+    text-align:right;
+    font-size: 0.7em;   
+  }
+
+  .contatos {
+    position: absolute;
+  left: 45%;
+  right: 40.07%;
+  top: 80.33%;
+  bottom: 79.78%; }
+  
+
+
+  .redes{
+    position: absolute;
+  left: 65%;
+  right: 10.07%;
+  top: 80.33%;
+  bottom: 79.78%; }
+
+  .dadosEmpresa{
+    position: absolute;
+  left: 25%;
+  right: 10.07%;
+  top: 40.33%;
+  bottom: 79.78%; }
 
 /* product */
 

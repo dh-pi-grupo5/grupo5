@@ -1,0 +1,6 @@
+.produtos{
+    display:flexbox;
+    align-content: space-around;
+    padding: 3% 10%;
+}
+

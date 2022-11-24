@@ -69,28 +69,7 @@
     font-size: 0.7em;   
   }
 
-  .contatos {
-    position: absolute;
-  left: 45%;
-  right: 40.07%;
-  top: 100%;
-  bottom: 79.78%; }
   
-  .redes{
-  
-  position: absolute;
-  left: 65%;
-  right: 10.07%;
-  top: 100%;
-  }
-
-  .dadosEmpresa{
-  
-  position: absolute;
-  left: 25%;
-  right: 40.07%;
-  top: 100%;
-  bottom: 79.78%; }
 
 /* product */
 

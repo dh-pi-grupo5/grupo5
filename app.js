@@ -11,17 +11,20 @@ app.use(express.static('public'));
 app.get('/', (req,res)=>{
     return res.sendFile(__dirname + '/views/index.html');
 });
-app.get('/login.html', (req,res)=>{
-    return res.sendFile(__dirname + '/views/login.html');
-});
-app.get('/product.html', (req,res)=>{
+
+app.get('/produtos', (req,res)=>{
     return res.sendFile(__dirname + '/views/product.html');
 });
-app.get('/admClient.html', (req,res)=>{
+app.get('/admClient', (req,res)=>{
     return res.sendFile(__dirname + '/views/admClient.html');
 });
-app.get('/shoppingCart.html', (req,res)=>{
+app.get('/carrinho', (req,res)=>{
     return res.sendFile(__dirname + '/views/shoppingCart.html');
+});
+
+//Criando a rota para login 
+app.get('/login', (req,res)=>{
+    return res.sendFile(__dirname + '/views/login.html');
 });
 
 app.listen(3000);

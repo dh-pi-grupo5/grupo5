@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Sabão', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
+    <button type="button" id="adicionar2" id="produto2" onclick="AddCarrinho('Macarrão', document.getElementById('qtd1').value, '2.00', 2)"> Comprar </button>  
+    <button type="button" id="adicionar3" id="produto3" onclick="AddCarrinho('Feijão', document.getElementById('qtd1').value, '2.00', 3)"> Comprar </button>
+</body>
+
+<!-- Gravando Dados usando HTML -->
+<!-- localStorage.setItem("nome_do_campo","valor"); -->
+
+<!-- JavaScript (vem com <Script>) -->
+    <script>
+        function AddCarrinho(produto, qtd, valor, posicao)
+        { 
+        localStorage.setItem("produto" + posicao, produto);
+        localStorage.setItem("qtd" + posicao, qtd);
+        valor = valor * qtd;
+        localStorage.setItem("valor" + posicao, valor);
+        alert("Produto adicionado ao carrinho!");
+        }
+       </script>
+    
+
+</html>

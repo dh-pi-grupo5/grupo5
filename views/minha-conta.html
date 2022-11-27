@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Five Garden</title>
-
 </head>
-
-<!--Linka o arquivo style.css com o product.html-->
-<link rel="stylesheet" type="text/css" href="/css/login.css" />
-<!--                                           -->
-
 <body>
-
     <header>
         <!-- LOGO DA Floricultura -->
 
@@ -26,9 +19,7 @@
 
             <!-- BOTOES DE LINK -->
             <div class="navigation_header">
-                <a href="/produtos" class="active">Produtos</a>
-                <a href="/quemSomos" class="active">Sobre Nós</a>
-                <a href="/login" class="active">Entrar</a>
+
                 <!--PLACEHOLDER-->
                 <a href="/"> <img src="" alt=""> </a>
                 <input type="text" name="" id="" placeholder=" Pesquise produtos..">
@@ -42,23 +33,24 @@
 
 
     </header>
+    <div>
+        <div class="nav-user">
+            <a href="/login" class="active">Início</a>
+            <a href="/login" class="active">Meus dados</a>
+            <a href="/login" class="active">Meus pedidos</a>
+            <a href="/login" class="active">Atendimento ao cliente</a>
+            <a href="/login" class="active">Favoritos</a>
+        </div>
 
-    <main>
-        <div class="caixa-login">
-            <section>
-                <form action="">
-                    <input type="email" placeholder="Email" class="placeholder-user">
-                    <input type="password" placeholder="Senha" class="placeholder-user">
-                    <button class="log-in">Log in</button>
-                    <h4>ou</h4>
-                    <img src="/public/img/gmail.png" alt="">
-                    <button>Entrar com google</button>
-                </form>
+    </div>
+    <main class="cadastro">
+        <div class="bem-vindo">
+            <span>Bem vindo, cliente!</span>
+            <span>emailDoCliente@cliente.com</span>
 
-
-            </section>
         </div>
     </main>
+    
 
     <footer>
 
@@ -86,15 +78,5 @@
 
 
     </footer>
-
-
-
-
-
-
-
-
 </body>
-
-
 </html>

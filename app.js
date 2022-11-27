@@ -27,4 +27,11 @@ app.get('/login', (req,res)=>{
     return res.sendFile(__dirname + '/views/login.html');
 });
 
+app.get('/cadastrar', (req, res)=>{
+    return res.sendFile(__dirname + '/views/cadastrar.html');
+});
+
+app.get('/minha-conta', (req,res)=>{
+    return res.sendFile(__dirname + '/views/minha-conta.html')
+})
 app.listen(3000);

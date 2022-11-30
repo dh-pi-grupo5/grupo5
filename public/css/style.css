@@ -25,7 +25,7 @@
 }
 
 .header {
-  background-color: rgb(43, 223, 52);
+  background-color: var(--color-green3);
   box-shadow: 2px 2px 4px #cc8fb5;
   height: 7em;
   justify-content: space-between;

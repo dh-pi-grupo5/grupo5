@@ -27,7 +27,7 @@ app.get('/login', (req,res)=>{
     return res.sendFile(__dirname + '/views/login.html');
 });
 
-app.post('/cadastro', (req, res)=>{
+app.get('/cadastro', (req, res)=>{
     return res.sendFile(__dirname + '/views/cadastro.html');
 });
 

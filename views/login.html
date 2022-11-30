@@ -42,23 +42,35 @@
 
 
     </header>
-
-    <main>
-        <div class="caixa-login">
-            <section>
-                <form action="">
-                    <input type="email" placeholder="Email" class="placeholder-user">
-                    <input type="password" placeholder="Senha" class="placeholder-user">
-                    <button class="log-in">Log in</button>
-                    <h4>ou</h4>
-                    <img src="/public/img/gmail.png" alt="">
-                    <button>Entrar com google</button>
-                </form>
+<main>
+<form id="form-login" action="" method="POST">
 
 
-            </section>
+        <h2>Faça seu login!</h2>
+
+    <div class="campos">
+        <label for="">
+            E-mail:
+            <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+        </label>
+        
+        <label for="">
+            Senha:
+            <input type="password" name="senha" id="senha" placeholder="Digite a senha">
+        </label>
+
+        <div class="botoes">
+
+            <button type="submit">Entrar</button>
+            
+            <span> Ainda não tem uma conta?</span>
+    
+            <button>Cadastre-se</button>
         </div>
-    </main>
+
+    </div>
+</form>
+<main>
 
     <footer>
 

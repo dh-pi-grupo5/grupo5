@@ -32,6 +32,6 @@ app.get('/cadastro', (req, res)=>{
 });
 
 app.get('/minha-conta', (req,res)=>{
-    return res.sendFile(__dirname + '/views/minha-conta.html')
+    return res.sendFile(__dirname + '/views/painel.html')
 })
 app.listen(3000);

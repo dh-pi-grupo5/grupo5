@@ -50,10 +50,11 @@
   border-radius: 10px;
 }
 
-::placeholder {
+/* ::placeholder {
   /* color: rgb(211, 235, 231); */
-  /* background-color: var(--color-green3); */
-}
+  /* background-color: var(--color-green3); 
+}*/
+
 
 .force-opaque::placeholder {
   opacity: 1;
@@ -193,6 +194,10 @@ body main{
   flex-direction: column;
   align-items: center;
   
+}
+#form-login .botoes a{
+  text-decoration: none;
+  color: #000000;
 }
 
 .botoes span{

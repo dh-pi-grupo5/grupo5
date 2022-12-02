@@ -27,4 +27,10 @@ app.get('/login', (req,res)=>{
     return res.sendFile(__dirname + '/views/login.html');
 });
 
+app.get('/checkoutPagamento', (req,res)=>{
+    return res.sendFile(__dirname + '/views/checkoutPagamento.html');
+});
+
+
+
 app.listen(3000);

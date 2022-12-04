@@ -48,8 +48,9 @@
 
 .active {
     color: #fff;
-    padding: 15px;
-    border-radius: 10px;
+    padding-bottom: 10px;
+    /* padding-left: 10px; */
+    /* border-radius: 10px; */
 }
 
 /* ::placeholder {
@@ -219,9 +220,13 @@ body main {
 
 /*CSS DO PAINEL DE USUARIO*/
 body .nav-user {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    position: relative;
+    left: 75px;
+    padding: 66px;
 
     /* background-color: rgb(48, 148, 115); */
 }
@@ -230,6 +235,17 @@ body .nav-user a {
     font-size: 20px;
     color: var(--color-green3);
     text-decoration: none;
+
+}
+
+body .nav-user a:hover{
+    transform: scale(1.1);
+}
+
+.nav-user a,
+ a + a{
+    padding-top: 24px;
+    border-bottom: 1px solid var(--color-green3);
 }
 
 footer {
@@ -239,6 +255,12 @@ footer {
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 60px;
+    position: relative;
+    top: 289px;
 
+}
+
+main .painel-ola{
+    background-color: aqua;
+    
 }

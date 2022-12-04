@@ -11,5 +11,8 @@ app.use(express.static('public'));
 app.get('/home', (req,res)=>{
     return res.sendFile(__dirname + '/views/index.html');
 });
+app.get('/produto', (req,res) =>{
+    return res.sendFile(__dirname + '/views/product.html');
+});
 
 app.listen(3000);

@@ -36,7 +36,7 @@
 }
 
 .navigation_header {
-    gap: 3em;
+    gap: 1em;
 }
 
 .navigation_header a {
@@ -246,7 +246,12 @@ body .nav-user a:hover {
 a+a {
     padding-top: 24px;
     border-bottom: 1px solid var(--color-green3);
+    border-radius: 0;
 }
+
+/* .active{
+    bor
+} */
 
 footer {
     /* background-color: aqua; */

@@ -11,7 +11,6 @@
   <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 
-<!--Linka os arquivos .css com o index.html(que é a HOME, pag inicial da floricultura)-->
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/css/product.css" />
 
@@ -42,57 +41,45 @@
 </header>
 
 <body>
+  <!-- container produtos -->
+  <section class="container produtos">
 
-  <section class="titleProduct">
+    <article class="row produtos-compra">
+      <figure class="col-md-7 mb-3">
+        <img src="/img/rosas_coloridas.jpg" class="img-fluid" alt="Rosas coloridas">
+      </figure>
 
-    <h2>Arranjos</h2>
-  </section>
-  <section class="sectionImage">
-    <article>
-      <img src="/img/rosas_coloridas.jpg" alt="Rosas coloridas">
-      <h2>Nome do Produto</h2>
-      <span class="quantidade">12 rosas</span>
-      <span class="preco">R$ 99,99</span>
+      <section class="col-md-5 mb-2 d-flex flex-column justify-content-around">
+        <article class="produtos-conteudo">
+          <h1>Buquê de rosas</h1>
+          <p>
+            Que tal demonstrar todo o seu carinho, amor e desejos de felicidade para alguém especial? Para isso, a nossa
+            sugestão é o Buquê Partitura de Mini Spray Vermelho.Aproveite a entrega em até 3 horas e surpreenda quem
+            você ama ainda hoje.
+          </p>
+        </article>
+        <article class="produtos-preco">
+          <strong>
+            R$ 79,00
+            <span class="d-block"> em até 6x sem juros</span>
+          </strong>
+          <form action="#">
+            <div class="form-group">
+              <label for="produtos-quantidade-itens">Selecione a quantidade</label>
+          <select class="form-control" aria-label="produtos-quantidade-itens">
+            <option selected>1</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
+            <option value="3">4</option>
+          </select>
+        </div>
+        </form>
+          <button type="submit" class="btn btn-success col-md-12">Comprar</button>
+        </article>
+      </section>
+
     </article>
 
-    <article>
-      <img src="/img/rosas_vermelhas.jpg" alt="Rosas coloridas">
-      <h2>Nome do Produto</h2>
-      <span class="quantidade">12 rosas</span>
-      <span class="preco">R$ 99,99</span>
-    </article>
-
-    <article>
-      <img src="/img/rosas_vermelhas.jpg" alt="Rosas coloridas">
-      <h2>Nome do Produto</h2>
-      <span class="quantidade">12 rosas</span>
-      <span class="preco">R$ 99,99</span>
-    </article>
-
-    <article>
-      <img src="/img/rosas_coloridas.jpg" alt="Rosas coloridas">
-      <h2>Nome do Produto</h2>
-      <span class="quantidade">12 rosas</span>
-      <span class="preco">R$ 99,99</span>
-    </article>
-
-  </section>
-
-  <section class="sectionDescription">
-    <span>Valor: R$ 99</span>
-    <p>
-      Lindo arranjo de rosas para encantar quem você ama!
-    </p>
-    
-<!--
-    <span style="font-size: 10px">&#9711;</span>
-  </section>
-
-  <section>Cores</section>
-  <footer>
-    <div class="geral">
--->
-      <div class="footer-clean">
         <footer>
           <div class="container">
             <div class="row justify-content-center">
@@ -135,10 +122,8 @@
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-
-
-    </div>
-  </footer>
+      </div>
+      </footer>
 </body>
 
 </html>

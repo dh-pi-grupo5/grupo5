@@ -13,13 +13,13 @@ app.get('/', (req,res)=>{
 });
 
 app.get('/produtos', (req,res)=>{
-    return res.sendFile(__dirname + '/views/product.html');
+    return res.sendFile(__dirname + '/views/produtos.html');
 });
 app.get('/admClient', (req,res)=>{
     return res.sendFile(__dirname + '/views/admClient.html');
 });
 app.get('/carrinho', (req,res)=>{
-    return res.sendFile(__dirname + '/views/shoppingCart.html');
+    return res.sendFile(__dirname + '/views/carrinho.html');
 });
 
 //Criando a rota para login 

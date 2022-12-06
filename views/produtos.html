@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Garden</title>
+    
+</head>  
+
+    <!--Linka o arquivo style.css com o product.html-->
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/produtos.css" />
+                 <!--  -->
+  
+    <body>
+
+<header>
+    <!-- LOGO DA Floricultura -->
+
+<div class="header" id="header">
+    <div class="logo_header">
+        <a href="/"> <img src="/img/Logo.png" class="img_logo_header" alt="LogoSite"></a>
+    </div>
+    <!--fim do LOGO  -->
+
+    <!-- BOTOES DE LINK -->
+    <div class="navigation_header">
+        <a href="/produtos"class="active">Produtos</a>
+        <a href="/quemSomos"class="active">Sobre Nós</a>
+        <a href="/login"class="active">Entrar</a>
+        <!--PLACEHOLDER--> 
+         <a href="/"> <img src="" alt=""> </a>
+         <input type="text" name="" id="" placeholder=" Pesquise produtos..">
+         <button>Buscar</button>
+         <a href=""> <img src="" alt="">
+         <span></span>
+         <!--FIM DO PLACEHOLDER-->
+        <a href="/carrinho"><img src="/img/Carrinho.png"class="img_carrinho_header"></a>
+    </div>
+    <!-- FIM DOS BOTOES DE LINK -->
+    
+
+</header>
+
+<body>
+<div class= "produtos">
+<div align="center">
+	<img src="img/Crisantemos.png">
+	<br>Crisantemos <strong>R$ 34,00</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Crisantemos', document.getElementById('qtd1').value, '34.00', 1)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/Margaridas.png">
+	<br>Margaridas <strong>R$ 58,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Margaridas', document.getElementById('qtd2').value, '58.90', 2)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/Orquidea.png">
+	<br>Orquideas <strong>R$ 52,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Orquideas', document.getElementById('qtd3').value, '52.90', 3)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/CopoDeLeite.png">
+	<br>Copo de Leite <strong>R$ 34,00</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd4">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('CopoDeLeite', document.getElementById('qtd4').value, '34.00', 4)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/Samambaia.png">
+	<br>Samambaia<strong>R$ 58,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd5">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Samambaia', document.getElementById('qtd5').value, '58.90', 5)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/arranjo_flores1.png">
+	<br>Arranjo de Flores <strong>R$ 52,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd6">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('arranjo_flores', document.getElementById('qtd6').value, '52.90', 6)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/rosas_coloridas1.png">
+	<br>Rosas Coloridas <strong>R$ 52,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd7">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Rosas Coloridas', document.getElementById('qtd3').value, '52.90', 7)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/arranjo_colorido1.png">
+	<br>Arranjo Colorido<strong>R$ 34,00</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd8">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Arranjo Colorido', document.getElementById('qtd4').value, '34.00', 8)"> Comprar </button>
+</div>
+
+<div align="center">
+	<img src="img/rosas_vermelhas1.png">
+	<br>Rosas Vermelhas<strong>R$ 58,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd9">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Rosas Vermelhas', document.getElementById('qtd5').value, '58.90', 9)"> Comprar </button>
+</div>
+
+<p align="center">
+	<a href="/carrinho"> Ver Carrinho de compras </a>
+</p>
+
+</div>
+
+</body>		
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>

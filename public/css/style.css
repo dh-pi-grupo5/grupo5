@@ -1,12 +1,13 @@
 :root {
-  --color-green: rgb(43,223,52);
-  --color-greenlight:rgb(211, 235, 231);
+  --color-green: rgb(43, 223, 52);
+  --color-greenlight: rgb(211, 235, 231);
   --color-red: #aa2b47;
   --color-green3: #597e64;
   --color-dark4: #1c1c1c;
   --color-dark5: #343434;
   --color-purple: #b040ff;
 }
+
 /* * {
   margin: 0;
   padding: 0;
@@ -29,9 +30,9 @@
   box-shadow: 2px 2px 4px #cc8fb5;
   height: 7em;
   justify-content: space-between;
-  padding: 0 10%
-  ;
+  padding: 0 10%;
 }
+
 .navigation_header {
   gap: 3em;
 }
@@ -63,26 +64,27 @@
   margin-left: 5em;
 }
 
-  .logotipo{
-    width: 100%;
-    text-align:right;
-    font-size: 0.7em;   
-  }
+.logotipo {
+  width: 100%;
+  text-align: right;
+  font-size: 0.7em;
+}
 
-  
+
 
 /* product */
 
-.titleProduct  {
+.titleProduct {
   /* Title */
   position: absolute;
   left: 10%;
   right: 10.07%;
   top: 20.33%;
-  bottom: 79.78%;}
+  bottom: 79.78%;
+}
 
-  
-  /* Heading 03
+
+/* Heading 03
 
   font-family: "Public Sans";
   font-style: normal;
@@ -92,7 +94,7 @@
   identical to box height, or 122%
   letter-spacing: -1.5px;
   color: #000000; */
- 
+
 
 
 .sectionDescription {
@@ -100,16 +102,18 @@
   width: 357px;
   height: 104px;
   left: 140px;
-  top: 337px;}
+  top: 337px;
+}
 
-  .sectionImage{
-    position: absolute;
-    left: 10%;
-    right: 10.07%;
-    top: 30.33%;
-    bottom: 79.78%;}
+.sectionImage {
+  position: absolute;
+  left: 10%;
+  right: 10.07%;
+  top: 30.33%;
+  bottom: 79.78%;
+}
 
-  /* Paragraph 02
+/* Paragraph 02
  
   {font-family: "Public Sans";
   font-style: normal;

@@ -238,12 +238,12 @@ body .nav-user a {
 
 }
 
-body .nav-user a:hover{
+body .nav-user a:hover {
     transform: scale(1.1);
 }
 
 .nav-user a,
- a + a{
+a+a {
     padding-top: 24px;
     border-bottom: 1px solid var(--color-green3);
 }
@@ -260,7 +260,7 @@ footer {
 
 }
 
-main .painel-ola{
+main .painel-ola {
     background-color: aqua;
-    
+
 }

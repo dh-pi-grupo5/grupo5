@@ -50,10 +50,10 @@
   border-radius: 10px;
 }
 
-::placeholder {
+/* ::placeholder {
   color: rgb(211, 235, 231);
   background-color: var(--color-green3);
-}
+} */
 
 .force-opaque::placeholder {
   opacity: 1;

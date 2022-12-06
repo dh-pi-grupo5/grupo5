@@ -2,3 +2,9 @@ body{
 display: flexbox;
 padding: 3% 10%;
 }
+
+div{
+    border:3px solid ;
+    padding:30px ;
+    margin: 30px;
+}

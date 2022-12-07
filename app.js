@@ -39,5 +39,8 @@ servidor.get('/painel-usuario', (req, res) => {
 servidor.get('/checkout-pagamento', (req, res) => {
     return res.sendFile(__dirname + "/views/checkout-pagamento.html");
 });
+servidor.get('/finalizacao-compra', (req,res)=>{
+    return res.sendFile(__dirname + "/views/finalizacao-compra.html")
+})
 // 4 - Por o servidor no modo "aguardando requisição"
 servidor.listen(3000);

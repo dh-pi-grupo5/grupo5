@@ -20,7 +20,7 @@ main {
     display: grid;
     gap: 100px;
     grid-template-areas: "aside section";
-    grid-template-columns: 289px 1fr 80px;
+    grid-template-columns: 289px 1fr 10px;
 }
 
 /*ASIDE DA ESQUERDA*/
@@ -53,8 +53,26 @@ main>aside.esquerda .btn-logout {
     margin-top: 50px;
 }
 
-#user, #trolley,#phone,#heart,#flower{
+#user, #trolley,#phone,#heart,#flower,#rocket{
     width: 30px;
     margin-right: 10px;
+}
+
+/*SECTION DA DIREITA*/
+
+main > section.direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(80, 162, 130);
+    border-radius: 10px;
+    filter:opacity(0.9);
+    grid-area: section;
+    height: 340px;
+}
+
+main > section.direita h3{
+    padding: 10px;
+    margin-top: 20px;
 }
 

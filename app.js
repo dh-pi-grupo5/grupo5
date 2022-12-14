@@ -1,37 +1,46 @@
-//Importanto o express
+// 1 - Importar o express
 const express = require('express');
+const path = require('path');
 
-//Criando o servidor
-const app = express();
+// 2 - Criar o servidor
+const servidor = express();
 
-//Define a pasta public como sendo a pasta de arquivos estáticos
-app.use(express.static('public'));
+// Define a pasta public como sendo a pasta arquivos estáticos
+servidor.use(express.static(path.join(__dirname, 'public')))
 
-//Criando a rota para home
-app.get('/', (req,res)=>{
-    return res.sendFile(__dirname + '/views/index.html');
+// 3 - Definir de uma rota neste servidor
+// endereço, método, função callback (a ação que o servidor vai realizar quando requerimento do usuario chegar)
+servidor.get('/', (req, res)=>{
+    return res.sendFile(__dirname + "/views/index.html");
 });
 
-app.get('/produtos', (req,res)=>{
-    return res.sendFile(__dirname + '/views/product.html');
-});
-app.get('/admClient', (req,res)=>{
-    return res.sendFile(__dirname + '/views/admClient.html');
-});
-app.get('/carrinho', (req,res)=>{
-    return res.sendFile(__dirname + '/views/shoppingCart.html');
+servidor.get('/carrinho',(req, res)=>{
+    return res.sendFile(__dirname + "/views/carrinho.html");
 });
 
-//Criando a rota para login 
-app.get('/login', (req,res)=>{
-    return res.sendFile(__dirname + '/views/login.html');
+servidor.get('/produtos',(req, res)=>{
+    return res.sendFile(__dirname + "/views/produtos.html");
 });
-
-app.get('/cadastro', (req, res)=>{
-    return res.sendFile(__dirname + '/views/cadastro.html');
+// servidor.get('/quemSomos',(req, res)=>{
+//     return res.sendFile(__dirname + "/views/quemSomos.html");
+// });
+servidor.get('/login',(req, res)=>{
+    return res.sendFile(__dirname + "/views/login.html");
 });
-
-app.get('/minha-conta', (req,res)=>{
-    return res.sendFile(__dirname + '/views/minha-conta.html')
-})
-app.listen(3000);
+servidor.get('/listaProdutos',(req, res)=>{
+    return res.sendFile(__dirname + "/views/listaProdutos.html");
+});
+servidor.get('/cadastro',(req, res)=>{
+    return res.sendFile(__dirname + "/views/cadastro.html");
+});
+servidor.get('/painel-usuario',(req, res)=>{
+    return res.sendFile(__dirname + "/views/painel-usuario.html");
+});
+servidor.get('/checkout-pagamento',(req, res)=>{
+    return res.sendFile(__dirname + "/views/checkout-pagamento.html");
+});
+servidor.get('/finalizacao-compras',(req, res)=>{
+    return res.sendFile(__dirname + "/views/finalizacao-compras.html");
+});
+// 4 - Por o servidor no modo "aguardando requisição"
+servidor.listen(3000);

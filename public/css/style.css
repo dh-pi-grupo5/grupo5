@@ -29,7 +29,7 @@ body{
   align-items: center;
 }
 .header{
-  background-color:rgb(80, 162, 130);
+  background-color:var(--color-greenheader1);
   box-shadow: 1px 1px 4px rgb(75, 157, 125);
   height: 7em;
   justify-content: space-between;

@@ -15,7 +15,7 @@
 }
 
 .img_logo_header {
-    width: 160px;
+    width: 110px;
 }
 
 .header,
@@ -102,24 +102,24 @@
 
 .titleProduct {
     /* Title */
-    position: absolute;
+    /* position: absolute;
     left: 65%;
     right: 10.07%;
     top: 15.33%;
-    bottom: 79.78%;
+    bottom: 79.78%; */
 
     /* Heading 03 */
 
-    font-family: "Public Sans";
+    /* font-family: "Public Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 44px; */
     /* identical to box height, or 122% */
 
-    letter-spacing: -1.5px;
+    /* letter-spacing: -1.5px; */
 
-    color: #000000;
+    /* color: #000000; */
 }
 
 .sectionDescription {
@@ -159,7 +159,7 @@ html {
 } */
 
 #form-login {
-    background-color: #597e64;
+    background-color: rgb(43, 223, 52);
     width: 600px;
     padding: 70px;
     border-radius: 5px;

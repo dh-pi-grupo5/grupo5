@@ -15,6 +15,8 @@
 <link rel="stylesheet" type="text/css" href="/css/login.css" />
 <!--                                           -->
 
+<body>
+	
 
 <header>
 <div class="header" id="header">
@@ -23,10 +25,10 @@
 </div>
 
 
-<div class="navigation_header">
+<!-- <div class="navigation_header">
 	<a href="/produtos"class="active">Produtos</a>
 	<a href="https://keukenhof.nl/en/"class="active">Sobre Nós</a>
-	<!--PLACEHOLDER--> 
+	
 	<a href="/">
 		<img src="" alt="">
 	</a>
@@ -35,38 +37,49 @@
 	<a href="">
 		<img src="" alt="">
 		<span></span>
-		<!--FIM DO PLACEHOLDER-->
+		
 		<a href="/carrinho"><img src="/img/Carrinho.png"class="img_carrinho_header"></a>
 		<a href="/login"class="active">Entrar</a>
-</div>
+</div> -->
 </header>
 
 <main>
-    <form id="form-login" action="" method="POST">
+	<aside class="esquerda">
 
+		<form id="form-login" action="" method="POST">
+	
+	
+			<h2>Faça seu login</h2>
+	
+			<div class="campos">
+				<label for="">
+					Usuário ou E-mail:
+					<input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
+				</label>
+	
+				<label for="">
+					Senha:
+					<input type="password" name="senha" id="senha" placeholder="Digite a senha">
+				</label>
+				
+	
+				<div class="botoes">
+	
+					<button> <a href="/minha-conta"></a> Entrar</button>
+	
+					<span> Ainda não tem uma conta? <a href="/cadastro"> Cadastre-se</a></span>
+		
+				</div>
+	
+			</div>
+		</form>
+	</aside>
 
-        <h2>Faça seu login</h2>
+	<aside class="direita">
+		<img src="/img/costela_adao.jpg" alt="">
 
-        <div class="campos">
-            <label for="">
-                E-mail:
-                <input type="email" name="email" id="email" placeholder="Digite o seu e-mail">
-            </label>
-
-            <label for="">
-                Senha:
-                <input type="password" name="senha" id="senha" placeholder="Digite a senha">
-            </label>
-
-            <div class="botoes">
-
-                <button> <a href="/minha-conta"></a> Entrar</button>
-
-                <span> Ainda não tem uma conta? <a href="/cadastro"> Cadastre-se</a></span>
-
-
-            </div>
-
-        </div>
-    </form>
+	</aside>
 </main>
+
+</body>
+</html>
